@@ -1,4 +1,5 @@
 import { Button } from '@/components/ui/button.jsx'
+import WaitlistForm from '../components/WaitlistForm'
 
 const HomePage = () => {
   return (
@@ -20,6 +21,12 @@ const HomePage = () => {
             <div className="flex justify-center">
               <Button 
                 className="bg-primary hover:bg-primary/90 text-white px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-200"
+                onClick={() => {
+                  const waitlistSection = document.getElementById('waitlist');
+                  if (waitlistSection) {
+                    waitlistSection.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
               >
                 Join the Waitlist
               </Button>
@@ -80,6 +87,22 @@ const HomePage = () => {
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Waitlist Section */}
+      <section id="waitlist" className="bg-white py-20">
+        <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Be the First to Know
+            </h2>
+            <p className="text-xl text-gray-600">
+              Join our waitlist and get early access when SisuKai launches.
+            </p>
+          </div>
+          
+          <WaitlistForm />
         </div>
       </section>
     </div>
