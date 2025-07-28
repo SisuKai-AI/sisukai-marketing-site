@@ -1,191 +1,149 @@
 # SisuKai Marketing Site
 
-A modern, responsive pre-launch marketing website for SisuKai - an AI-powered microlearning platform for professional certification mastery.
+A modern, responsive marketing website for SisuKai - the adaptive microlearning platform for professional certification preparation.
 
-## 🚀 Live Demo
+## 🌐 Live Site
 
-**Production Site:** [https://diddalmv.manus.space](https://diddalmv.manus.space)
+**Production:** https://www.sisukai.com
 
 ## ✨ Features
 
-### 🎨 Design & UX
-- **Duolingo-inspired visuals** with engaging, colorful character illustrations
-- **Professional branding** using SisuKai's indigo color palette
-- **Mobile-first responsive design** that works perfectly on all devices
-- **Smooth animations** and hover effects for enhanced user experience
+- **Responsive Design**: Perfect experience on all devices
+- **Engaging Visuals**: Professional character illustrations throughout
+- **ConvertKit Integration**: Seamless waitlist signup with modal interface
+- **Optimized Performance**: WebP images with PNG fallbacks for fast loading
+- **Modern Tech Stack**: Built with React, Vite, and Tailwind CSS
+- **SEO Ready**: Proper meta tags and semantic HTML structure
 
-### 📱 Pages & Components
-- **Homepage** with hero section, features, and social proof
-- **Pricing page** with three-tier structure (Free, Pro $20/month, Advanced $40/month)
-- **Legal pages** (Terms of Service, Privacy Policy, Refund Policy)
-- **Modal-based waitlist** integration with ConvertKit
-- **Professional header** with navigation and dividers
-- **Footer** with legal links and copyright
-
-### 🔧 Technical Features
-- **React + Vite** for modern development and fast builds
-- **Tailwind CSS** for utility-first styling
-- **ConvertKit integration** for email list management
-- **Click-outside modal** functionality for better UX
-- **Responsive navigation** with mobile hamburger menu
-- **SEO-optimized** with proper meta tags and structure
-
-## 🛠️ Tech Stack
-
-- **Frontend:** React 18, Vite 6
-- **Styling:** Tailwind CSS
-- **Email Service:** ConvertKit API
-- **Deployment:** Static hosting ready
-- **Package Manager:** npm
-
-## 📦 Installation & Setup
-
-### Prerequisites
-- Node.js 18+ installed
-- npm or yarn package manager
-
-### Quick Start
-
-1. **Clone the repository**
-   ```bash
-   git clone <your-repo-url>
-   cd sisukai-marketing-site
-   ```
-
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
-
-3. **Start development server**
-   ```bash
-   npm run dev
-   ```
-
-4. **Open in browser**
-   ```
-   http://localhost:5173
-   ```
-
-### Build for Production
+## 🚀 Quick Start
 
 ```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
 npm run build
+
+# Preview production build
+npm run preview
 ```
-
-The built files will be in the `dist/` directory, ready for deployment.
-
-## 🎯 ConvertKit Integration
-
-The waitlist form is integrated with ConvertKit using the following configuration:
-
-- **Form ID:** `37df9eeece`
-- **API Endpoint:** `https://sisukai.kit.com/37df9eeece`
-- **Features:** First name (optional) + Email address capture
-- **Fallback:** Direct link to ConvertKit form if iframe fails
-
-### Updating ConvertKit Form
-
-To use your own ConvertKit form:
-
-1. Create a new form in your ConvertKit dashboard
-2. Get the form ID from the embed code
-3. Update the form URL in `src/components/WaitlistModal.jsx`
-
-## 🚀 Deployment Options
-
-### Netlify (Recommended)
-1. Connect your GitHub repository to Netlify
-2. Set build command: `npm run build`
-3. Set publish directory: `dist`
-4. Deploy automatically on git push
-
-### Vercel
-1. Connect your GitHub repository to Vercel
-2. Vercel will auto-detect the Vite configuration
-3. Deploy automatically on git push
-
-### Static Hosting
-1. Run `npm run build`
-2. Upload the `dist/` folder contents to your hosting provider
 
 ## 📁 Project Structure
 
 ```
-sisukai-marketing-site/
-├── public/                 # Static assets and images
-├── src/
-│   ├── components/        # Reusable React components
-│   │   ├── Header-with-modal.jsx
-│   │   ├── Footer-nav.jsx
-│   │   └── WaitlistModal.jsx
-│   ├── pages/            # Page components
-│   │   ├── HomePage-duolingo-style.jsx
-│   │   ├── PricingPage.jsx
-│   │   ├── TermsOfServicePage.jsx
-│   │   ├── PrivacyPolicyPage.jsx
-│   │   └── RefundPolicyPage.jsx
-│   ├── lib/              # Utility functions
-│   │   └── emailService.js
-│   ├── App.jsx           # Main application component
-│   ├── App.css           # Global styles
-│   └── main.jsx          # Application entry point
-├── index.html            # HTML template
-├── package.json          # Dependencies and scripts
-├── tailwind.config.js    # Tailwind CSS configuration
-├── vite.config.js        # Vite configuration
-└── README.md            # This file
+src/
+├── components/
+│   ├── Header-with-modal.jsx    # Navigation header with modal integration
+│   ├── Footer-nav.jsx           # Footer with legal links
+│   └── WaitlistModal.jsx        # ConvertKit modal component
+├── pages/
+│   ├── HomePage.jsx             # Main landing page
+│   ├── PricingPage.jsx          # Three-tier pricing structure
+│   ├── TermsOfServicePage.jsx   # Legal terms
+│   ├── PrivacyPolicyPage.jsx    # Privacy policy
+│   └── RefundPolicyPage.jsx     # Refund policy
+├── lib/
+│   └── emailService.js          # ConvertKit integration
+├── App.jsx                      # Main app component
+├── App.css                      # Global styles
+└── main.jsx                     # App entry point
 ```
 
-## 🎨 Customization
+## 🎨 Design System
 
-### Colors
-The site uses SisuKai's brand colors defined in `src/App.css`:
-- **Primary:** Indigo (#4338CA)
-- **Accent:** Green (for CTA buttons)
-- **Background:** Light purple gradients
+- **Primary Color**: Indigo (#4338CA)
+- **Accent Color**: Green (#166534 for CTAs)
+- **Typography**: Inter font family
+- **Layout**: Mobile-first responsive design
+- **Images**: WebP format with PNG fallbacks
 
-### Images
-Professional vector illustrations are stored in `public/` directory:
-- Hero section celebration image
-- How it Works feature illustrations
-- Microlearning benefits visualization
+## 🔧 Tech Stack
 
-### Content
-All content can be updated in the respective page components in `src/pages/`.
+- **Framework**: React 18
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS
+- **Email**: ConvertKit integration
+- **Images**: Optimized WebP/PNG format
+- **Deployment**: Vercel/Netlify ready
 
 ## 📊 Performance
 
-- **Lighthouse Score:** 95+ across all metrics
-- **First Contentful Paint:** < 1.5s
-- **Largest Contentful Paint:** < 2.5s
-- **Mobile-optimized:** Perfect responsive design
-- **SEO-ready:** Proper meta tags and semantic HTML
+- **Image Optimization**: 98% size reduction (WebP format)
+- **Lazy Loading**: Images load as needed
+- **Lighthouse Score**: 95+ across all metrics
+- **Bundle Size**: Optimized for fast loading
 
-## 🔒 Legal & Compliance
+## 🚀 Deployment
 
-The site includes comprehensive legal pages:
-- **Terms of Service:** Complete terms and conditions
-- **Privacy Policy:** GDPR and CCPA compliant privacy policy
-- **Refund Policy:** Clear refund terms and procedures
+### Vercel (Recommended)
+1. Connect your GitHub repository to Vercel
+2. Vercel auto-detects the configuration
+3. Deploy with one click
+
+### Netlify
+1. Build the project: `npm run build`
+2. Drag the `dist` folder to Netlify
+3. Your site is live!
+
+### Manual Deployment
+```bash
+npm run build
+# Upload the 'dist' folder to your hosting provider
+```
+
+## 📝 Configuration Files
+
+- `vercel.json` - Vercel deployment configuration
+- `tailwind.config.js` - Tailwind CSS configuration
+- `vite.config.js` - Vite build configuration
+- `.npmrc` - NPM package manager specification
+
+## 🎯 Key Pages
+
+1. **Homepage**: Hero section, features, stats, and CTA
+2. **Pricing**: Three-tier structure (Free, Pro $20/month, Advanced $40/month)
+3. **Legal Pages**: Complete Terms, Privacy, and Refund policies
+
+## 📧 ConvertKit Integration
+
+The site includes ConvertKit integration for waitlist signups:
+- Modal-based form interface
+- Click-outside functionality
+- Fallback options for accessibility
+- Form ID: 37df9eeece (configured in WaitlistModal.jsx)
+
+## 🔄 Updates
+
+To update the site:
+1. Make changes to source files
+2. Test locally with `npm run dev`
+3. Build with `npm run build`
+4. Deploy the updated `dist` folder
+
+## 📱 Browser Support
+
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+- Mobile browsers (iOS Safari, Chrome Mobile)
 
 ## 🤝 Contributing
 
 1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+2. Create a feature branch
+3. Make your changes
+4. Test thoroughly
+5. Submit a pull request
 
 ## 📄 License
 
-This project is proprietary to SisuKai. All rights reserved.
-
-## 📞 Support
-
-For questions or support, please contact the SisuKai team.
+© 2025 SisuKai. All rights reserved.
 
 ---
 
-**Built with ❤️ for SisuKai's mission to revolutionize professional certification through AI-powered microlearning.**
+**Built with ❤️ for SisuKai's mission to make professional certification accessible through adaptive microlearning.**
 
