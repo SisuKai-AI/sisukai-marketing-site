@@ -1,8 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-const WaitlistModal = ({ isOpen, onClose }) => {
-  if (!isOpen) return null;
-
+const WaitlistModal = ({ onClose }) => {
   // Handle backdrop click to close modal
   const handleBackdropClick = (e) => {
     if (e.target === e.currentTarget) {
@@ -33,7 +31,7 @@ const WaitlistModal = ({ isOpen, onClose }) => {
         {/* Modal Content - Scrollable */}
         <div className="p-4 sm:p-6 flex-1 overflow-y-auto">
           <p className="text-gray-600 mb-4 sm:mb-6 text-center text-sm sm:text-base">
-            Get early access when SisuKai launches and be the first to experience AI-powered microlearning!
+            Get early access when SisuKai launches and be the first to experience adaptive microlearning!
           </p>
           
           {/* ConvertKit Form iframe */}
@@ -66,30 +64,5 @@ const WaitlistModal = ({ isOpen, onClose }) => {
   );
 };
 
-const WaitlistButton = ({ children, className = "", onClick }) => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const handleClick = () => {
-    setIsModalOpen(true);
-    if (onClick) onClick();
-  };
-
-  return (
-    <>
-      <button
-        onClick={handleClick}
-        className={`bg-indigo-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-indigo-700 transition-colors duration-200 shadow-lg hover:shadow-xl ${className}`}
-      >
-        {children}
-      </button>
-      
-      <WaitlistModal 
-        isOpen={isModalOpen} 
-        onClose={() => setIsModalOpen(false)} 
-      />
-    </>
-  );
-};
-
-export default WaitlistButton;
+export default WaitlistModal;
 

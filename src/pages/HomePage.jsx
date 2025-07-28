@@ -1,7 +1,6 @@
 import React from 'react';
-import WaitlistButton from '../components/WaitlistModal';
 
-const HomePage = () => {
+const HomePage = ({ onJoinWaitlist }) => {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section with Engaging Celebration */}
@@ -18,9 +17,12 @@ const HomePage = () => {
                 SisuKai delivers an adaptive microlearning experience that's tailored to you. Stop wasting time on what you already know and focus on what you need to learn to pass.
               </p>
               <div className="mt-8">
-                <WaitlistButton className="text-xl px-12 py-5">
+                <button
+                  onClick={onJoinWaitlist}
+                  className="bg-indigo-600 text-white px-12 py-5 rounded-lg text-xl font-semibold hover:bg-indigo-700 transition-colors duration-200 shadow-lg hover:shadow-xl"
+                >
                   Join the Waitlist
-                </WaitlistButton>
+                </button>
               </div>
             </div>
             
@@ -208,9 +210,12 @@ const HomePage = () => {
           <p className="text-xl text-indigo-100 mb-12">
             Join thousands of professionals who are already on their path to certification success with SisuKai's adaptive microlearning.
           </p>
-          <WaitlistButton className="text-xl px-12 py-5 bg-green-800 text-white hover:bg-green-900 hover:text-white transition-colors duration-200 shadow-lg">
+          <button
+            onClick={onJoinWaitlist}
+            className="text-xl px-12 py-5 bg-green-600 text-white hover:bg-green-900 hover:text-white transition-colors duration-200 shadow-lg rounded-lg font-semibold"
+          >
             Join the Waitlist Now
-          </WaitlistButton>
+          </button>
           <p className="mt-6 text-sm text-indigo-200">
             Be the first to know when SisuKai launches. No spam, ever.
           </p>
