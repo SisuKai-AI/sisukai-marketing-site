@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Header from './components/Header-with-modal'
 import Footer from './components/Footer-nav'
-import HomePage from './pages/HomePage-duolingo-style';
+import HomePage from './pages/HomePage';
 import PricingPage from './pages/PricingPage'
 import TermsOfServicePage from './pages/TermsOfServicePage'
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage'
@@ -34,7 +34,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-white flex flex-col">
-      <Header navigate={navigate} />
+      <Header currentPage={currentPage} setCurrentPage={setCurrentPage} />
       <main className="flex-grow">
         {renderPage()}
       </main>

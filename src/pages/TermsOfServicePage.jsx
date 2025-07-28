@@ -23,9 +23,7 @@ const TermsOfServicePage = () => {
             <section>
               <h2 className="text-2xl font-bold text-gray-900 mb-4">2. Description of Service</h2>
               <p className="text-gray-700 leading-relaxed">
-                SisuKai is an AI-powered certification preparation platform that provides personalized learning experiences, 
-                practice exams, and study materials to help users prepare for professional certifications. The service includes 
-                adaptive learning algorithms, progress tracking, and gamification features.
+                SisuKai is an adaptive certification preparation platform that provides personalized learning experiences, practice exams, and study materials to help users prepare for professional certifications. The service includes adaptive learning algorithms, progress tracking, and gamification features.
               </p>
             </section>
 
