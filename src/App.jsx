@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import Header from './components/Header-nav'
+import Header from './components/Header-with-modal'
 import Footer from './components/Footer-nav'
-import HomePage from './pages/HomePage-basic'
+import HomePage from './pages/HomePage-duolingo-style';
 import PricingPage from './pages/PricingPage'
 import TermsOfServicePage from './pages/TermsOfServicePage'
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage'
