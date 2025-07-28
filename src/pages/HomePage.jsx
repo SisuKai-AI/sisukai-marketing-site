@@ -212,7 +212,7 @@ const HomePage = ({ onJoinWaitlist }) => {
           </p>
           <button
             onClick={onJoinWaitlist}
-            className="text-xl px-12 py-5 bg-green-600 text-white hover:bg-green-900 hover:text-white transition-colors duration-200 shadow-lg rounded-lg font-semibold"
+            className="text-xl px-12 py-5 bg-green-500 text-white hover:bg-green-600 hover:text-white transition-colors duration-200 shadow-lg rounded-lg font-semibold"
           >
             Join the Waitlist Now
           </button>
