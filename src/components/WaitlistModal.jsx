@@ -37,7 +37,8 @@ const WaitlistModal = ({ onClose }) => {
           {/* ConvertKit Form iframe */}
           <div className="relative">
             <iframe
-              src="https://sisukai.kit.com/37df9eeece"
+              //src="https://sisukai.kit.com/37df9eeece"
+              src="https://sisukai.kit.com/b567aa9adb"
               className="w-full h-80 sm:h-96 border-0 rounded-lg"
               title="SisuKai Waitlist Form"
               loading="lazy"
@@ -50,6 +51,7 @@ const WaitlistModal = ({ onClose }) => {
               Having trouble with the form?{' '}
               <a
                 href="https://sisukai.kit.com/37df9eeece"
+                // href="https://sisukai.kit.com/b567aa9adb"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-indigo-600 hover:text-indigo-700 underline"
