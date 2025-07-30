@@ -52,7 +52,8 @@ const Header = ({ onJoinWaitlist }) => {
               <div className="w-px h-4 bg-gray-300 mx-2"></div>
               
               <a
-                href="#"
+                // href="#"
+                href="https://app.sisukai.com"
                 className="px-3 py-2 text-sm font-medium text-gray-600 hover:text-indigo-600 transition-colors"
               >
                 Sign In
